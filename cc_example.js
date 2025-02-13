@@ -50,4 +50,16 @@ console.log (inventories.items);//viewing the middle item
 
 //Note to self to make everything "green"= ctrl + /
 
-//Task 7
+//Task 7 Using the Find Method
+let employees = [
+    {name:"Alice", position:"Developer", salary: 70000},
+    {name:"Bob", position: "Designer", salary: 60000},
+    {name:"Charlie", position:"Manager", salary: 90000}
+];
+
+function findemployee(employees, name) {
+    return employees.find(employee => employee.name === name);
+};
+
+console.log(findemployee(employees, "Charlie"));
+
