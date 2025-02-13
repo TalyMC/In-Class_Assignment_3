@@ -63,3 +63,19 @@ function findemployee(employees, name) {
 
 console.log(findemployee(employees, "Charlie"));
 
+//Tak 8 Combining Arrays
+let orders1 = [
+    { id: 1, customer: "Alice"},
+    { id: 2, customer: "Bob"}
+];
+
+let orders2 = [
+    { id: 3, customer: "Charlie"},
+    { id: 4, customer: "David"}
+];
+
+function combineOrders (orders1, orders2) {
+    return [...orders1, ...orders2]
+}
+
+console.log(combineOrders(orders1, orders2));
